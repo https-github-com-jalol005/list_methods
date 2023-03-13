@@ -8,4 +8,11 @@
         list: return answer
 */
 
-void main() {}
+List func(List fruits1, List fruits2){
+  var answer = fruits1 + fruits2;
+  return answer;
+}
+
+void main() {
+  print(func(['apple','kiwi'], ['organe','pear']));
+}
