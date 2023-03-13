@@ -10,4 +10,14 @@
         list: return answer
 */
 
-void main() {}
+List func(List number1, List number2){
+  var ans = number1.last;
+  number1.removeLast();
+  number2.insert(0, ans);
+  var answer = number1 + number2;
+  return answer;
+}
+
+void main() {
+  print(func([1,4,9,5,1],[8,8,9]));
+}
