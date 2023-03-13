@@ -8,4 +8,11 @@
         list: return answer
 */
 
-void main() {}
+List func(List fruits, String x){
+   fruits.add(x);
+   return fruits;
+}
+void main() {
+  print(func(['orange','apple'], 'banana'));
+}
+
